@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <header class="marco__principal">   
+        <p class="cuadro__derecho__img"> Ingresa el texto que deseas encriptar y desencriptar</p>
+
+    </header>    
+
+    <img class="posicion__imagen" src="./assets/Imagen.png" alt="Ingresa el texto que deseas encriptar o desencriptar">
+
+    <title>Encriptador</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solo letras minusculas y sin acentos</h1>
+        <textarea id="inputText" rows="4" placeholder="Introduce el texto aquí..."></textarea>
+        <br>
+        <button onclick="encriptar()">Encriptar</button>
+        <button onclick="desencriptar()">Desencriptar</button>
+        <br>
+        <textarea id="outputText" rows="4" readonly></textarea>
+        <br>
+        <button onclick="copiar()">Copiar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
